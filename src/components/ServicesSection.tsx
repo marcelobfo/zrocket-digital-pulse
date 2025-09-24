@@ -6,47 +6,38 @@ import {
   Sparkles, 
   Share2 
 } from "lucide-react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const services = [
   {
     icon: Globe,
-    title: "Criação de Sites e Sistemas Web",
-    description: "Desenvolvemos sites modernos, responsivos e otimizados para conversão, além de sistemas web personalizados para sua empresa.",
     color: "from-blue-500 to-cyan-500"
   },
   {
     icon: Megaphone,
-    title: "Anúncios Online",
-    description: "Campanhas estratégicas no Google Ads, Facebook Ads e outras plataformas para maximizar seu ROI e alcançar o público certo.",
     color: "from-purple-500 to-pink-500"
   },
   {
     icon: Bot,
-    title: "Automação de Marketing com IA",
-    description: "Implementamos soluções de automação inteligentes que otimizam seus processos e melhoram a experiência do cliente.",
     color: "from-green-500 to-emerald-500"
   },
   {
     icon: Users,
-    title: "Consultoria",
-    description: "Consultoria estratégica personalizada para definir as melhores práticas de marketing digital para seu negócio.",
     color: "from-orange-500 to-red-500"
   },
   {
     icon: Sparkles,
-    title: "Agentes de IA",
-    description: "Criamos agentes de IA personalizados para automatizar atendimento, vendas e processos internos da sua empresa.",
     color: "from-indigo-500 to-purple-500"
   },
   {
     icon: Share2,
-    title: "Gestão de Mídias Sociais",
-    description: "Gestão completa das suas redes sociais com conteúdo estratégico, engajamento e crescimento orgânico.",
     color: "from-teal-500 to-blue-500"
   }
 ];
 
 export const ServicesSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="services" className="py-20 relative">
       <div className="container mx-auto px-4">
@@ -54,11 +45,11 @@ export const ServicesSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6 fade-in">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Nossos Serviços
+              {t('services.title')}
             </span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto fade-in stagger-1">
-            Soluções completas de marketing digital para impulsionar seu negócio no ambiente digital
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -66,6 +57,8 @@ export const ServicesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
             const IconComponent = service.icon;
+            const serviceItems = t('services.items');
+            const serviceData = serviceItems[index] || {};
             return (
               <div
                 key={index}
@@ -80,10 +73,10 @@ export const ServicesSection = () => {
                 {/* Content */}
                 <div className="text-center md:text-left">
                   <h3 className="text-xl font-bold mb-4 text-foreground">
-                    {service.title}
+                    {serviceData.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    {service.description}
+                    {serviceData.description}
                   </p>
                 </div>
 
@@ -97,13 +90,13 @@ export const ServicesSection = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16 fade-in stagger-6">
           <p className="text-lg text-muted-foreground mb-6">
-            Pronto para transformar sua presença digital?
+            {t('services.cta.text')}
           </p>
           <button
             onClick={() => window.open("https://api.whatsapp.com/send/?phone=5511969192223&text&type=phone_number&app_absent=0", "_blank")}
             className="hero-button px-8 py-4 rounded-full font-semibold text-lg"
           >
-            Fale Conosco
+            {t('services.cta.button')}
           </button>
         </div>
       </div>

@@ -1,0 +1,62 @@
+{
+  "header": {
+    "services": "Serviços",
+    "contact": "Contato"
+  },
+  "hero": {
+    "badge": "Marketing Digital de Alto Impacto",
+    "title": "Transforme Sua",
+    "titleSecond": "Presença Digital", 
+    "subtitle": "Somos uma agência de marketing digital especializada em soluções inovadoras. Do Brasil aos EUA, levamos sua marca ao próximo nível com tecnologia de ponta.",
+    "ctaPrimary": "Começar Agora",
+    "ctaSecondary": "Nossos Serviços",
+    "stats": {
+      "countries": "Países",
+      "projects": "Projetos", 
+      "support": "Suporte",
+      "rating": "Avaliação"
+    }
+  },
+  "services": {
+    "title": "Nossos Serviços",
+    "subtitle": "Soluções completas de marketing digital para impulsionar seu negócio no ambiente digital",
+    "cta": {
+      "text": "Pronto para transformar sua presença digital?",
+      "button": "Fale Conosco"
+    },
+    "items": [
+      {
+        "title": "Criação de Sites e Sistemas Web",
+        "description": "Desenvolvemos sites modernos, responsivos e otimizados para conversão, além de sistemas web personalizados para sua empresa."
+      },
+      {
+        "title": "Anúncios Online",
+        "description": "Campanhas estratégicas no Google Ads, Facebook Ads e outras plataformas para maximizar seu ROI e alcançar o público certo."
+      },
+      {
+        "title": "Automação de Marketing com IA",
+        "description": "Implementamos soluções de automação inteligentes que otimizam seus processos e melhoram a experiência do cliente."
+      },
+      {
+        "title": "Consultoria",
+        "description": "Consultoria estratégica personalizada para definir as melhores práticas de marketing digital para seu negócio."
+      },
+      {
+        "title": "Agentes de IA",
+        "description": "Criamos agentes de IA personalizados para automatizar atendimento, vendas e processos internos da sua empresa."
+      },
+      {
+        "title": "Gestão de Mídias Sociais",
+        "description": "Gestão completa das suas redes sociais com conteúdo estratégico, engajamento e crescimento orgânico."
+      }
+    ]
+  },
+  "footer": {
+    "locations": "Estamos Presentes em",
+    "locationsText": "São Paulo - Brasil e Orlando - Florida",
+    "contacts": "Contatos",
+    "phone": "Brasil: (11) 96929-2223",
+    "ctaButton": "Fale Conosco no WhatsApp",
+    "copyright": "© 2024 ZRocket Marketing Agency. Todos os direitos reservados."
+  }
+}

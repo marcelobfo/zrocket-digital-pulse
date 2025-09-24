@@ -1,0 +1,62 @@
+{
+  "header": {
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "High Impact Digital Marketing",
+    "title": "Transform Your",
+    "titleSecond": "Digital Presence",
+    "subtitle": "We are a digital marketing agency specialized in innovative solutions. From Brazil to the USA, we take your brand to the next level with cutting-edge technology.",
+    "ctaPrimary": "Get Started",
+    "ctaSecondary": "Our Services",
+    "stats": {
+      "countries": "Countries",
+      "projects": "Projects",
+      "support": "Support", 
+      "rating": "Rating"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Complete digital marketing solutions to boost your business in the digital environment",
+    "cta": {
+      "text": "Ready to transform your digital presence?",
+      "button": "Contact Us"
+    },
+    "items": [
+      {
+        "title": "Website & Web System Creation",
+        "description": "We develop modern, responsive websites optimized for conversion, plus custom web systems for your company."
+      },
+      {
+        "title": "Online Advertising",
+        "description": "Strategic campaigns on Google Ads, Facebook Ads and other platforms to maximize your ROI and reach the right audience."
+      },
+      {
+        "title": "AI Marketing Automation",
+        "description": "We implement intelligent automation solutions that optimize your processes and improve customer experience."
+      },
+      {
+        "title": "Consulting",
+        "description": "Personalized strategic consulting to define the best digital marketing practices for your business."
+      },
+      {
+        "title": "AI Agents",
+        "description": "We create custom AI agents to automate customer service, sales and internal processes of your company."
+      },
+      {
+        "title": "Social Media Management",
+        "description": "Complete management of your social networks with strategic content, engagement and organic growth."
+      }
+    ]
+  },
+  "footer": {
+    "locations": "We are Present in",
+    "locationsText": "São Paulo - Brazil and Orlando - Florida",
+    "contacts": "Contacts",
+    "phone": "Brazil: (11) 96929-2223",
+    "ctaButton": "Contact us on WhatsApp",
+    "copyright": "© 2024 ZRocket Marketing Agency. All rights reserved."
+  }
+}

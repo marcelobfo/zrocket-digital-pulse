@@ -1,6 +1,10 @@
 import { DarkModeToggle } from "./DarkModeToggle";
+import { LanguageToggle } from "./LanguageToggle";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export const Header = () => {
+  const { t } = useLanguage();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     element?.scrollIntoView({ behavior: "smooth" });
@@ -27,18 +31,19 @@ export const Header = () => {
             onClick={() => scrollToSection("services")}
             className="text-foreground/80 hover:text-primary transition-colors duration-300 font-medium"
           >
-            Serviços
+            {t('header.services')}
           </button>
           <button
             onClick={() => scrollToSection("contact")}
             className="text-foreground/80 hover:text-primary transition-colors duration-300 font-medium"
           >
-            Contato
+            {t('header.contact')}
           </button>
         </nav>
 
-        {/* Dark Mode Toggle */}
-        <div className="flex items-center">
+        {/* Language and Dark Mode Toggles */}
+        <div className="flex items-center space-x-3">
+          <LanguageToggle />
           <DarkModeToggle />
         </div>
       </div>
