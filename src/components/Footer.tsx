@@ -1,4 +1,5 @@
 import { MapPin, Phone } from "lucide-react";
+import { LogoComponent } from "./LogoComponent";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 export const Footer = () => {
@@ -8,16 +9,9 @@ export const Footer = () => {
     <footer id="contact" className="bg-card/50 border-t border-border/50 py-12">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          {/* Logo and Brand */}
-          <div className="flex items-center justify-center space-x-3 mb-8">
-            <img 
-              src="/logo.png" 
-              alt="ZRocket Logo" 
-              className="h-12 w-12 object-contain"
-            />
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              ZRocket
-            </span>
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <LogoComponent className="h-16 w-auto object-contain" />
           </div>
 
           {/* Locations */}
