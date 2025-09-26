@@ -1,5 +1,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import zrocketLogoDark from "@/assets/zrocket-logo-dark.png";
+import zrocketLogoLight from "@/assets/zrocket-logo-light.png";
 
 interface LogoComponentProps {
   className?: string;
@@ -23,9 +25,7 @@ export const LogoComponent = ({ className = "h-10 w-auto object-contain", alt = 
   const currentTheme = theme === 'system' ? systemTheme : theme;
   const isDark = currentTheme === 'dark';
 
-  const logoSrc = isDark 
-    ? "https://technedigital.com.br/wp-content/uploads/2025/09/02-ZROCKET_Logo-Fundo-Preto_Transparente.png"
-    : "https://technedigital.com.br/wp-content/uploads/2025/09/02-ZROCKET_Logo-Fundo-Branco_Transparente.png";
+  const logoSrc = isDark ? zrocketLogoDark : zrocketLogoLight;
 
   return (
     <img 
