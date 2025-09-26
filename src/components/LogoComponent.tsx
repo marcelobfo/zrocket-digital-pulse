@@ -24,8 +24,8 @@ export const LogoComponent = ({ className = "h-10 w-auto object-contain", alt = 
   const isDark = currentTheme === 'dark';
 
   const logoSrc = isDark 
-    ? "https://technedigital.com.br/wp-content/uploads/2025/09/02-ZROCKET_Logo-Fundo-Preto_Transparente-1-2048x713-1.png"
-    : "https://technedigital.com.br/wp-content/uploads/2025/09/image.webp";
+    ? "https://technedigital.com.br/wp-content/uploads/2025/09/02-ZROCKET_Logo-Fundo-Preto_Transparente.png"
+    : "https://technedigital.com.br/wp-content/uploads/2025/09/02-ZROCKET_Logo-Fundo-Branco_Transparente.png";
 
   return (
     <img 
