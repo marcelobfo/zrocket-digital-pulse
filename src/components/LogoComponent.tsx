@@ -1,6 +1,6 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import zrocketLogoDark from "@/assets/zrocket-logo-dark.png";
+import zrocketLogoDark from "@/assets/zrocket-logo-dark-new.png";
 import zrocketLogoLight from "@/assets/zrocket-logo-light.png";
 
 interface LogoComponentProps {
